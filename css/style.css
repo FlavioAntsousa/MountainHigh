@@ -399,23 +399,23 @@ nav {
     transition: 0.2s ease-in-out;
 
 }
-
-.imagens img:hover {
-    transform: scale(105%);
-}
-
-.img-carrousel {
-    transition: 0.3s ease-in-out;
-
-}
-
-.img-carrousel:hover {
+.ver-mais-eventos{
+    margin-top:30px ;
+    font-weight: bold;
+    border: 1px solid black;
+    border-radius: 5px;
     color: black;
-    transform: scale(105%);
-    transition: 0.3s ease-in-out;
-
+    padding: 10px;
 }
-
+.ver-mais-eventos:hover{
+    margin-top:30px ;
+    font-weight: bold;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: #222;
+    color: white;
+    padding: 10px;
+}
 .main4 {
     background-color: rgb(212, 212, 212);
     padding: 0% 0% 5% 0%;
@@ -620,3 +620,13 @@ footer a:hover {
     margin: 0;
     font-size: 14px;
 }
+
+
+.li-visible {
+    visibility: visible;
+}
+
+.li-hidden {
+    visibility: hidden;
+}
+

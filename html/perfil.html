@@ -16,6 +16,8 @@
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="../css/perfil.css" />
+    <link rel="stylesheet" href="../css/nav.css">
+
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,700,0,0" />
 
@@ -34,10 +36,19 @@
                 <div class="line3"></div>
             </div>
             <ul class="nav-list">
-                <li><a class="cor-text-nav line-decoration" href="pag.inicial.html">Início</a></li>
+                <li><a class="cor-text-nav line-decoration" href="pag.inicial.html">
+                        <span class="inicio" id="inicio">Início</span>
+                    </a></li>
                 <li><a class="cor-text-nav line-decoration" href="#main3">Sobre</a></li>
                 <li><a class="cor-text-nav line-decoration" href="#main4">Projetos</a></li>
-                <li><a class="cor-text-nav line-decoration" href="../html/sigIn-Up.html">Login</a></li>
+                <li class="li-visible" id="li-login"><a class="cor-text-nav line-decoration"
+                        href="../html/sigIn-Up.html">Login</a>
+                </li>
+                <li class="li-hidden" id="li-username"></li>
+                <li class="li-hidden" id="li-logout">
+                    <a class="cor-text-nav line-decoration" id="logout-btn">Logout</a>
+                </li>
+
             </ul>
         </nav>
     </header>
@@ -47,7 +58,7 @@
             <div class="col-3 border centrar">
                 <img class="foto bg-primary" src="../images/perfil.png">
                 <div class="info">
-                     <br><br>
+                    <br><br>
                     flavio antunes de sousa
                     <br>
                     17anos
@@ -60,6 +71,20 @@
             </div>
         </div>
     </main>
+    <script src="../js/login.js" type="module"></script>
+    <script>
+
+        console.log(localStorage.getItem("email"));
+
+        if (localStorage.getItem("email") != null) {
+            document.getElementById("li-username").innerHTML = localStorage.getItem("email");
+            document.getElementById("li-login").className = "li-hidden";
+            document.getElementById("li-logout").className = "li-visible";
+            document.getElementById("li-username").className = "li-visible";
+        }
+
+
+    </script>
 </body>
 
 </html>

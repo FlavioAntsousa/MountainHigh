@@ -282,3 +282,11 @@ footer a {
     color: #61b5ff;
     text-decoration: none;
 }
+
+.li-visible {
+    visibility: visible;
+}
+
+.li-hidden {
+    visibility: hidden;
+}

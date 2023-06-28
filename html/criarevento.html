@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <script src="../js/bootstrap.min.js"></script>
+    <style>
+        *,
+        *:after,
+        *:before {
+            margin: 0;
+            padding: 0;
+            font-family: 'Montserrat', sans-serif;
+
+        }
+
+        body {
+            background-color: rgb(238, 238, 238);
+
+        }
+
+        div {
+            padding: 10px 30px 0px 20px;
+        }
+
+        .background {
+            padding: 20px;
+            background-color: #ffffff;
+            box-shadow: 1px 1px 10px 1px rgb(155, 155, 155);
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <div class="background">
+            <p>
+            <h1> Creat an event</h1>
+            </p>
+            <form action="">
+                <label class="form-label" for="title-event">Title Event</label>
+                <input type="text" class="form-control" id="title-event">
+
+                <label for="description-event" class="form-label"> description of the event</label>
+                <textarea name="description-event" class="form-control" id="description-event" cols="30" rows="10">
+                    </textarea>
+                <br>
+
+                <label for="vagas-total-event" class="form-label">Total vagas fot the event</label>
+                <input type="number" class="form-control" id="vagas-total-event">
+
+                <label for="startDate" class="form-label">Start</label>
+                <input id="startDate" class="form-control" type="date" />
+
+                <label for="startDate" class="form-label">end</label>
+                <input id="startDate" class="form-control" type="date" />
+
+                <label for="price-event" class="form-label"> price for the event</label>
+                <input type="text" id="price-event" class="form-control">
+                <div>
+                    <div class="mb- b3">
+                        <label for="formFileMultiple" class="form-label">Chosose pictures for the event</label>
+                        <input class="form-control" type="file" id="formFileMultiple" multiple>
+                    </div>
+                </div>
+        </div>
+        </form>
+    </div>
+
+    </div>
+</body>
+
+</html>

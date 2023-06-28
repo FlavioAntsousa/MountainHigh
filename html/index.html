@@ -13,13 +13,15 @@
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/nav.css">
+
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,700,0,0" />
+
 </head>
 
 <body id="body">
     <div class="preload"></div>
-
     <header>
         <nav class="navbar fixed-top">
             <a href="#">
@@ -36,7 +38,14 @@
                     </a></li>
                 <li><a class="cor-text-nav line-decoration" href="#main3">Sobre</a></li>
                 <li><a class="cor-text-nav line-decoration" href="#main4">Projetos</a></li>
-                <li><a class="cor-text-nav line-decoration" href="../html/sigIn-Up.html">Login</a></li>
+                <li class="li-visible" id="li-login"><a class="cor-text-nav line-decoration"
+                        href="../html/sigIn-Up.html">Login</a>
+                </li>
+                <li class="li-hidden" id="li-username"></li>
+                <li class="li-hidden" id="li-logout">
+                    <a class="cor-text-nav line-decoration" href="../html/index.html">Logout</a>
+                </li>
+
             </ul>
         </nav>
     </header>
@@ -79,30 +88,37 @@
             <div class="titulo-exs">Eventos Realizados</div>
             <section class="content-section-main4">
                 <div class="container-main4">
-                  
-                  <div class="content-grid-main4">
-                    <div class="content-item-main4">
-                      <img src="imagem-1.jpg" alt="Imagem 1">
-                      <h3>Título do Artigo 1</h3>
-                      <p>Descrição curta do artigo 1. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                      <a href="#">Leia mais</a>
+
+                    <div class="content-grid-main4">
+                        <div class="content-item-main4">
+                            <img src="#" alt="Imagem 1">
+                            <h3>Título do Artigo 1</h3>
+                            <p>Descrição curta do artigo 1. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                                do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            <a href="#">Leia mais</a>
+                        </div>
+                        <div class="content-item-main4">
+                            <img src="#" alt="Imagem 2">
+                            <h3>Título do Artigo 2</h3>
+                            <p>Descrição curta do artigo 2. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                                do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            <a href="#">Leia mais</a>
+                        </div>
+                        <div class="content-item-main4">
+                            <img src="#" alt="Imagem 3">
+                            <h3>Título do Artigo 3</h3>
+                            <p>Descrição curta do artigo 3. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                                do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            <a href="#">Leia mais</a>
+                        </div>
                     </div>
-                    <div class="content-item-main4">
-                      <img src="imagem-2.jpg" alt="Imagem 2">
-                      <h3>Título do Artigo 2</h3>
-                      <p>Descrição curta do artigo 2. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                      <a href="#">Leia mais</a>
-                    </div>
-                    <div class="content-item-main4">
-                      <img src="imagem-3.jpg" alt="Imagem 3">
-                      <h3>Título do Artigo 3</h3>
-                      <p>Descrição curta do artigo 3. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                      <a href="#">Leia mais</a>
-                    </div>
-                  </div>
                 </div>
-              </section>
-              
+                <div class="centrar">
+                    <a class="ver-mais-eventos" href="../html/eventos.html">Ver mais</a>
+
+                </div>
+            </section>
+
         </div>
 
         <div class="contactos">
@@ -115,6 +131,21 @@
                             href="https://capcuttemplate.org/">Capcut Templates</a></div>
 
                 </div>
+                <div id="map" style="width:300px;height:300px;background:green"></div>
+                <script>
+                    function Map123() {
+                        var mapOptions = {
+                            center: new google.maps.LatLng(51.508742, -0.120850),
+                            zoom: 10,
+                            mapTypeId: google.maps.MapTypeId.HYBRID
+                        }
+                        var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+                    }
+                </script>
+                <script
+                    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=Map123">
+                </script>
+
             </div>
             <br>
             <br>
