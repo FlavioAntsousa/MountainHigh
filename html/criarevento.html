@@ -63,17 +63,29 @@
 
                 <label for="price-event" class="form-label"> price for the event</label>
                 <input type="text" id="price-event" class="form-control">
-                <div>
-                    <div class="mb- b3">
-                        <label for="formFileMultiple" class="form-label">Chosose pictures for the event</label>
-                        <input class="form-control" type="file" id="formFileMultiple" multiple>
-                    </div>
+
+                <div class="mb- b3">
+                    <label for="formFileMultiple" class="form-label">Chosose pictures for the event</label>
+                    <input class="form-control" type="file" id="formFileMultiple" multiple onchange="loadFile(event)">
+                    <br>
+                    <img id="output" width="30%" />
                 </div>
+                <button type="button" class="btn btn-success">criar evento</button>
+
         </div>
         </form>
     </div>
 
     </div>
+    <script>
+        var loadFile = function (event) {
+            var output = document.getElementById('output');
+            output.src = URL.createObjectURL(event.target.files[0]);
+            output.onload = function () {
+                URL.revokeObjectURL(output.src) // free memory
+            }
+        };
+    </script>
 </body>
 
 </html>

@@ -340,6 +340,32 @@ main a h2:hover {
     visibility: hidden;
 }
 
-.btn-inscrever{
-    
+.paralelo{
+    width: 120px; 
+   height: 40px; 
+   background: rgb(0, 128, 28);
+   transform: skew(20deg); 
+   -webkit-transform: skew(20deg); 
+   -moz-transform: skew(20deg); 
+   -o-transform: skew(20deg); 
+
 }
+.paralelo2{
+    width: 120px; 
+   height: 40px; 
+   background: rgb(0, 128, 28);
+   transform: skew(-20deg); 
+   -webkit-transform: skew(-20deg); 
+   -moz-transform: skew(-20deg); 
+   -o-transform: skew(-20deg); 
+
+}
+
+.preco-final{
+    position: relative; 
+    bottom: 35px;
+    left: 40px;
+    color: white;
+    font-style: bold;
+    font-size: 20px;
+    }
